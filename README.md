@@ -22,3 +22,14 @@ params = model.init(key, jnp.ones((1, 10), jnp.int32))
 ids = jax.random.randint(key, (1, 10), 0, 1000)
 logits = model.apply(params, ids)
 ```
+
+### Citations
+
+```bibtex
+@inproceedings{Katsch2023GateLoopFD,
+    title   = {GateLoop: Fully Data-Controlled Linear Recurrence for Sequence Modeling},
+    author  = {Tobias Katsch},
+    year    = {2023},
+    url     = {https://api.semanticscholar.org/CorpusID:265018962}
+}
+```
